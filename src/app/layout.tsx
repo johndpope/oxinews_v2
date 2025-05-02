@@ -32,19 +32,12 @@ export default function RootLayout({
   return (
     <html lang="en" suppressHydrationWarning>
       <head>
-        <script defer data-domain="oxinews.com" src="https://plausible.io/js/script.file-downloads.hash.outbound-links.pageview-props.revenue.tagged-events.js"></script>
         <script dangerouslySetInnerHTML={{ __html: `window.plausible = window.plausible || function() { (window.plausible.q = window.plausible.q || []).push(arguments) }` }} />
       </head>
       <body
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}
       >
         {/* Freshworks Customer Service Widget */}
-        <Script
-          id="freshworks-widget"
-          src="//fw-cdn.com/12540304/4938540.js"
-          strategy="afterInteractive"
-          data-chat="true"
-        />
         <ThemeProvider>
           <AuthProvider>
             {children}
