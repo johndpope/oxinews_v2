@@ -1,0 +1,14 @@
+apps:    
+  - name: "oxinews"
+    script: "pnpm"
+    args: "start:ec2"
+    cwd: "/home/ec2-user/oxinews_v2"
+    env:
+      PORT: 3030
+      HOST: "0.0.0.0"
+      NODE_ENV: "production"
+    max_memory_restart: "1G"
+    log_date_format: "YYYY-MM-DD HH:mm:ss"
+    merge_logs: true
+    out_file: "/home/ec2-user/.pm2/logs/oxinews-out.log"
+    error_file: "/home/ec2-user/.pm2/logs/oxinews-error.log"
