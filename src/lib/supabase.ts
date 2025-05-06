@@ -35,11 +35,11 @@ export const supabase = createClient(supabaseUrl, supabaseAnonKey, {
     flowType: 'pkce',
     storage: createStorageAdapter(),
   },
-  global: {
-    headers: {
-      'x-application-name': 'oxinews',
-    },
-  },
+  // global: {
+  //   headers: {
+  //     'x-application-name': 'oxinews',
+  //   },
+  // },
 });
 
 // Helper function to check if session exists
